@@ -6,7 +6,7 @@ A modern web application that helps users track their food inventory and receive
 
 🔗 [Visit Live Site](https://freshkeep1.netlify.app/)
 
----
+---    
 
 ## 🎯 Purpose
 
