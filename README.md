@@ -22,7 +22,7 @@ The **Food Expiry Tracker** is designed to:
 ![Food Expiry Screenshot](https://img.freepik.com/free-photo/woman-buying-fruits-online-using-her-smartphone_23-2149240374.jpg?ga=GA1.1.1744511623.1749385980&semt=ais_items_boosted&w=740)    
 
 - 🔐 **Authentication** — Secure login/logout with Firebase Auth.
-- 📦 **Add & View Items** — Add food with quantity, category, expiry date, and notes.
+- 📦 **Add & View Items** — Add food with quantity, category, expiry date, and notes.    
 - ⏰ **Expiry Countdown** — Track time remaining until expiry.
 - 📝 **Notes System** — Add custom notes to each food item.
 - 🔍 **Filtering** — Search/filter items by category or expiry status.
