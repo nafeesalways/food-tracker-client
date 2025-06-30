@@ -62,11 +62,11 @@ const MyItems = () => {
       <Helmet>
         <title>FreshKeep | MyItems</title>
       </Helmet>
-      <h2 className="text-2xl text-center font-bold mb-6">My Food Items</h2>
+      <h2 className="text-2xl text-center font-bold mb-6 text-green-500">My Food Items</h2>
       <div className="overflow-x-auto">
         <table className="table  border">
           <thead>
-            <tr className="bg-gray-100">
+            <tr className="bg-gray-100 text-green-500">
               <th>#</th>
               <th>Name</th>
               <th>Category</th>
@@ -78,11 +78,11 @@ const MyItems = () => {
           <tbody>
             {myItems.map((item, index) => (
               <tr key={item._id}>
-                <td>{index + 1}</td>
-                <td>{item.name}</td>
-                <td>{item.category}</td>
-                <td>{item.quantity}</td>
-                <td>{new Date(item.expiryDate).toLocaleDateString()}</td>
+                <td className="text-black">{index + 1}</td>
+                <td className="text-black">{item.name}</td>
+                <td className="text-black">{item.category}</td>
+                <td className="text-black">{item.quantity}</td>
+                <td className="text-black">{new Date(item.expiryDate).toLocaleDateString()}</td>
                 <td className="space-x-2">
                   <button
                     onClick={() => {

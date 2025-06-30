@@ -84,7 +84,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-200 shadow-sm">
       <div className="navbar-start">
         <div></div>
         <div className="dropdown">
@@ -171,7 +171,7 @@ const Navbar = () => {
         {user ? (
           <button
             onClick={handleLogOut}
-            className="btn hover:bg-black text-black hover:text-white"
+            className="btn  font-bold bg-green-600 text-white rounded-xl hover:bg-green-700 transition"
           >
             Log Out
           </button>

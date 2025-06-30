@@ -11,17 +11,19 @@ const Fridge = () => {
 
   const { user } = use(AuthContext);
 
-useEffect(() => {
-  handleFilter("All");
-}, []);
+  useEffect(() => {
+    handleFilter("All");
+  }, []);
 
   const handleFilter = (cat) => {
-    setCategory(cat)
+    setCategory(cat);
     axios
-      .get(`https://food-tracker-server.vercel.app/foodsCategory/?category=${cat}`)
+      .get(
+        `https://food-tracker-server.vercel.app/foodsCategory/?category=${cat}`
+      )
       .then((res) => {
-        console.log(res.data)
-        
+        console.log(res.data);
+
         setFoods(res.data);
       })
       .catch((err) => {
@@ -30,13 +32,14 @@ useEffect(() => {
   };
   const handleSearch = () => {
     axios
-      .get(`https://food-tracker-server.vercel.app/fridge-foods?&search=${searchText}`)
+      .get(
+        `https://food-tracker-server.vercel.app/fridge-foods?&search=${searchText}`
+      )
       .then((res) => setFoods(res.data))
       .catch((err) => console.error(err));
   };
 
   useEffect(() => {
-    
     axios
       .get(`https://food-tracker-server.vercel.app/foods`)
       .then((res) => setFoods(res.data))
@@ -69,6 +72,11 @@ useEffect(() => {
         <input
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
           type="text"
           placeholder="Type here"
           className="input input-ghost mr-2"

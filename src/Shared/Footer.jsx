@@ -1,4 +1,6 @@
 import React from "react";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6"; 
 
 const Footer = () => {
   return (
@@ -19,14 +21,34 @@ const Footer = () => {
         </p>
         <p className="text-white">Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
-      <nav>
-        <div className="grid grid-flow-col gap-4">
-          <a target="_blank" className="btn  hover:bg-black text-black hover:text-white " href="https://www.facebook.com/FreshKeep">Facebook</a>
-          <a target="_blank" className="btn  hover:bg-black text-black hover:text-white " href=" https://twitter.com/FreshKeep">X</a>
-
-          <a target="_blank" className="btn  hover:bg-black text-black hover:text-white " href="https://www.youtube.com/@FreshKeep">Youtube</a>
-        </div>
-      </nav>
+<nav>
+  <div className="grid grid-flow-col gap-4">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn text-green-500 text-xl"
+      href="https://www.facebook.com/FreshKeep"
+    >
+      <FaFacebook />
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn text-green-500 text-xl"
+      href="https://twitter.com/FreshKeep"
+    >
+      <FaXTwitter />
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn text-green-500 text-xl"
+      href="https://www.youtube.com/@FreshKeep"
+    >
+      <FaYoutube />
+    </a>
+  </div>
+</nav>
     </footer>
   );
 };
