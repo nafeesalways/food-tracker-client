@@ -48,7 +48,7 @@ const AddFood = () => {
       <Helmet>
         <title>FreshKeep | AddFood</title>
       </Helmet>
-      <h2 className="text-2xl font-bold mb-4">Add New Food Item</h2>
+      <h2 className="text-2xl font-bold mb-4 text-green-500">Add New Food Item</h2>
       <form onSubmit={handleAddFood} className="space-y-4">
         <input
           type="text"
@@ -104,7 +104,7 @@ const AddFood = () => {
         <button
           
           type="submit"
-          className="btn hover:bg-black text-black hover:text-white  w-full"
+          className="btn  font-bold bg-green-600 text-white rounded-xl hover:bg-green-700 transition  w-full"
         >
           Add Food
         </button>

@@ -41,7 +41,7 @@ const SignIn = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
           <div className="card-body">
-            <h1 className="text-5xl font-bold text-center">Sign In now!</h1>
+            <h1 className="text-5xl font-bold text-center text-green-500">Sign In now!</h1>
             <form onSubmit={handleLogin} className="fieldset">
               <label className="label">Email</label>
               <input
@@ -60,15 +60,15 @@ const SignIn = () => {
               <div>
                 <a className="link link-hover">Forgot password?</a>
               </div>
-              <button className="btn hover:bg-black text-black hover:text-white mt-4">
+              <button className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition mt-4">
                 Login
               </button>
               <p className="text-center font-semibold text-lg">or</p>
             
-              <p className="text-neutral font-semibold text-center">
+              <p className="text-gray-600 font-semibold text-center">
                 Don't have an account? Please{" "}
                 <Link
-                  className="underline text-neutral font-extrabold"
+                  className="underline text-green-400 font-extrabold"
                   to="/register"
                 >
                   Register

@@ -50,7 +50,7 @@ useEffect(() => {
       <Helmet>
         <title>FreshKeep | Fridge</title>
       </Helmet>
-      <h2 className="text-3xl font-bold mb-6 text-center">My Fridge</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center text-green-500">My Fridge</h2>
       <div className="flex justify-center mb-7">
         <select
           className="select select-bordered mr-3"
@@ -69,13 +69,18 @@ useEffect(() => {
         <input
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
+           onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleSearch();
+            }
+          }}
           type="text"
           placeholder="Type here"
           className="input input-ghost mr-2"
         />
         <button
           onClick={handleSearch}
-          className="btn  hover:bg-black text-black hover:text-white "
+          className="btn  font-bold bg-green-600 text-white rounded-xl hover:bg-green-700 transition"
         >
           Search
         </button>
@@ -113,7 +118,7 @@ useEffect(() => {
                 <div className="card-actions justify-end">
                   <Link
                     to={`/foods/${item._id}`}
-                    className="btn hover:bg-black text-black hover:text-white w-full"
+                    className="btn  font-bold bg-green-600 text-white rounded-xl hover:bg-green-700 transition w-full"
                   >
                     See Details
                   </Link>

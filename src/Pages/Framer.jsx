@@ -13,7 +13,7 @@ const Framer = () => {
                 transition={{ duration: 1 }}
                 className="text-left max-w-md"
             >
-                <h1 className="text-4xl font-bold text-green-700 mb-4">Food Tracking System</h1>
+                <h1 className="text-4xl font-bold text-green-700 mb-4">Tracking System Ongoing</h1>
                 <p className="text-gray-700 text-lg mb-6">
                     Monitor your nutrition, track your meals, and stay healthy with our intuitive food tracking system.
                 </p>
