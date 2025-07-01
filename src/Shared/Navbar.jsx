@@ -4,7 +4,6 @@ import { AuthContext } from "../Provider/AuthProvider";
 import userIcon from "../assets/image.png";
 import { toast } from "react-toastify";
 import { Tooltip } from "react-tooltip";
-import Container from "./Container";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
@@ -85,58 +84,114 @@ const Navbar = () => {
     </>
   );
   return (
-     <div className="bg-amber-500 shadow-sm">
-      <Container>
-        <div className="navbar">
-          <div className="navbar-start">
-            <div className="dropdown">
-              <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-50"
-              >
-                {Links}
-              </ul>
-            </div>
-            <ProfastLogo />
+    <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar-start">
+        <div></div>
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {" "}
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />{" "}
+            </svg>
           </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{Links}</ul>
-          </div>
-          <div className="navbar-end">
-            {user ? (
-              <button
-                onClick={handleLogout}
-                className="btn bg-[#CAEB66] p-3 rounded-lg text-black"
-              >
-                LogOut
-              </button>
-            ) : (
-              <Link
-                to="/login"
-                className="btn bg-[#CAEB66] p-3 rounded-lg text-black"
-              >
-                Login
-              </Link>
-            )}
-          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            {Links}
+          </ul>
         </div>
-      </Container>
+        <a href="#">
+          <img
+            className="h-15 w-15"
+            src="https://cdn-icons-png.flaticon.com/128/17845/17845758.png"
+            alt=""
+          />
+        </a>
+        <a className="btn btn-ghost text-xl">FreshKeep</a>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">{Links}</ul>
+      </div>
+      <div className="navbar-end">
+        <input
+          type="checkbox"
+          value="dark"
+          className="toggle theme-controller mr-4 sm:mr-6"
+          checked={theme === "dark"}
+          onChange={handleThemeChange}
+          aria-label="Toggle dark mode"
+        />
+        <div
+          id="my-button"
+          className="relative cursor-pointer"
+          onClick={() => setShowLogout(!showLogout)}
+          aria-label={`User profile: `}
+        >
+          <img
+            data-tip="This is a tooltip!"
+            src={user ? user.photoURL : userIcon}
+            alt="User profile"
+            className="w-10 h-10 rounded-full object-cover"
+          />
+          <Tooltip
+            anchorId="my-button"
+            content={`${user?.displayName}`}
+            place="top"
+          />
+          {user && (
+            <div
+              className={`${
+                showLogout ? "block" : "hidden"
+              } absolute top-12 left-0 text-black text-sm px-2 py-1 bg-green-200 rounded shadow-md z-10 md:hidden`}
+            >
+              {user.displayName}
+            </div>
+          )}
+
+          {user && (
+            <div className="hidden md:block absolute top-12 left-0 text-black text-sm px-2 py-1 bg-green-200 rounded shadow-md opacity-0 group-hover:opacity-100 transition whitespace-nowrap z-10">
+              {user.displayName}
+            </div>
+          )}
+        </div>
+
+        {/* login and logout part */}
+        {user ? (
+          <button
+            onClick={handleLogOut}
+            className="btn  font-bold bg-green-600 text-white rounded-xl hover:bg-green-700 transition"
+          >
+            Log Out
+          </button>
+        ) : (
+          <>
+            <Link
+              to="/signin"
+              className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition mr-2"
+            >
+              Sign In
+            </Link>
+            <Link
+              to="/register"
+              className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition"
+            >
+              Register
+            </Link>
+          </>
+        )}
+      </div>
     </div>
   );
 };
