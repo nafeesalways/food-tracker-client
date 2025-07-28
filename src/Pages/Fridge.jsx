@@ -83,7 +83,7 @@ const Fridge = () => {
         />
         <button
           onClick={handleSearch}
-          className="btn  hover:bg-black text-black hover:text-white "
+          className="btn  bg-green-600 text-white rounded-xl hover:bg-green-700 transition"
         >
           Search
         </button>
@@ -121,7 +121,7 @@ const Fridge = () => {
                 <div className="card-actions justify-end">
                   <Link
                     to={`/foods/${item._id}`}
-                    className="btn hover:bg-black text-black hover:text-white w-full"
+                    className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition w-full"
                   >
                     See Details
                   </Link>

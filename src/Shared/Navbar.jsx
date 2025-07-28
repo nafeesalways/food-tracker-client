@@ -114,12 +114,12 @@ const Navbar = () => {
         </div>
         <a href="#">
           <img
-            className="lg:h-13 lg:w-13"
+            className="lg:h-13 lg:w-13 h-5 w-5"
             src="https://cdn-icons-png.flaticon.com/128/17845/17845758.png"
             alt=""
           />                                
         </a>
-        <a className="btn btn-ghost lg:text-xl text-sm -ml-2">FreshKeep</a>
+        <a href="/" className="btn btn-ghost lg:text-xl text-sm -ml-2">FreshKeep</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{Links}</ul>
@@ -128,7 +128,7 @@ const Navbar = () => {
         <input
           type="checkbox"
           value="dark"
-          className="toggle theme-controller mr-4 sm:mr-6"
+          className="lg:toggle lg:theme-controller mr-4 sm:mr-6 hidden"
           checked={theme === "dark"}
           onChange={handleThemeChange}
           aria-label="Toggle dark mode"

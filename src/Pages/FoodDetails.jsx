@@ -77,10 +77,10 @@ const FoodDetails = () => {
       <div className="flex flex-col md:flex-row gap-6">
         <img src={food.image} alt={food.name} className="w-60 h-60 object-cover rounded-lg" />
         <div>
-          <h2 className="text-2xl font-bold">{food.name}</h2>
-          <p><span className="font-semibold">Category:</span> {food.category}</p>
-          <p><span className="font-semibold">Quantity:</span> {food.quantity}</p>
-          <p><span className="font-semibold">Expiry Date:</span> {new Date(food.expiryDate).toDateString()}</p>
+          <h2 className="text-2xl font-bold text-green-500">{food.name}</h2>
+          <p><span className="font-semibold text-gray-500">Category:</span> <span className="text-green-400">{food.category}</span></p>
+          <p><span className="font-semibold text-gray-500">Quantity:</span> <span className="text-green-400">{food.quantity}</span></p>
+          <p><span className="font-semibold text-gray-500">Expiry Date:</span> <span className="text-green-400">{new Date(food.expiryDate).toDateString()}</span></p>
           <p className="mt-2 text-gray-600">{food.description}</p>
           <div className="mt-2">
             <Countdown expiryDate={food.expiryDate} />
@@ -90,7 +90,7 @@ const FoodDetails = () => {
 
       {/* Notes Section */}
       <div className="mt-10">
-        <h3 className="text-xl font-bold mb-4">Add Note</h3>
+        <h3 className="text-xl font-bold mb-4 text-gray-600">Add Note</h3>
         {user && food?.userEmail === user?.email ? (
           <form onSubmit={handleAddNote} className="space-y-3">
             <textarea
@@ -116,7 +116,7 @@ const FoodDetails = () => {
 
       {/* Display Notes */}
       <div className="mt-6">
-        <h3 className="text-lg font-semibold mb-2">Notes</h3>
+        <h3 className="text-lg font-semibold mb-2 text-gray-600">Notes</h3>
         {notes.length > 0 ? (
           <ul className="space-y-2">
             {notes.map((note, index) => (
