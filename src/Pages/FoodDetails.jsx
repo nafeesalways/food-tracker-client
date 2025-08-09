@@ -100,7 +100,7 @@ const FoodDetails = () => {
               onChange={(e) => setNoteText(e.target.value)}
               required
             ></textarea>
-            <button type="submit" className="btn hover:bg-black text-black hover:text-white w-full">Add Note</button>
+            <button type="submit" className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition w-full">Add Note</button>
           </form>
         ) : (
           <div>

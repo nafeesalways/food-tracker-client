@@ -30,7 +30,7 @@ const Footer = () => {
       <FaEnvelope className="text-green-300" /> support@freshkeep.com
     </p>
     <p className="flex items-center gap-2">
-      <FaMapMarkerAlt className="text-green-300" /> 123 Fresh Street, GreenCity, USA
+      <FaMapMarkerAlt className="text-green-300" /> 123 Fresh Street, GreenCity, Bangladesh
     </p>
   </div>
 
