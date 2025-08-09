@@ -53,6 +53,16 @@ const Navbar = () => {
       >
         Fridge
       </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `block  font-bold mr-4 rounded transition-colors ${
+            isActive ? "border-b-4 font-bold text-lg" : "font-semibold text-lg"
+          }`
+        }
+        to="/features"
+      >
+        Features
+      </NavLink>
       {user && (
         <>
           <NavLink
