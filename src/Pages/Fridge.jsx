@@ -20,7 +20,9 @@ const Fridge = () => {
   const handleFilter = (cat) => {
     setCategory(cat);
     axios
-      .get(`https://food-tracker-server.vercel.app/foodsCategory/?category=${cat}`)
+      .get(
+        `https://food-tracker-server.vercel.app/foodsCategory/?category=${cat}`
+      )
       .then((res) => {
         setFoods(res.data);
         setCurrentPage(1); // Reset to first page when filtering
@@ -63,7 +65,7 @@ const Fridge = () => {
       <Helmet>
         <title>FreshKeep | Fridge</title>
       </Helmet>
-      <h2 className="text-3xl font-bold mb-6 text-center">My Fridge</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center">Fridge Items</h2>
       <div className="flex justify-center mb-7 flex-wrap gap-3">
         <select
           className="select select-bordered"

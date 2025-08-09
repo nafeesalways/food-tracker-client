@@ -6,7 +6,9 @@ import { toast } from "react-toastify";
 const Register = () => {
   const { createUser, setUser, updateUser } = use(AuthContext);
   const [name, setName] = useState("Test User");
-  const [photo, setPhoto] = useState("https://cdn-icons-png.flaticon.com/128/3135/3135715.png");
+  const [photo, setPhoto] = useState(
+    "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+  );
   const [email, setEmail] = useState("testuser@example.com");
   const [password, setPassword] = useState("123456#Tu");
   const [nameError, setNameError] = useState("");
@@ -53,7 +55,9 @@ const Register = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
           <div className="card-body">
-            <h1 className="text-5xl font-bold text-center text-green-500">Register now</h1>
+            <h1 className="text-5xl font-bold text-center text-green-500">
+              Register now
+            </h1>
             <form onSubmit={handleRegister} className="fieldset">
               <label className="label">Name</label>
               <input
@@ -65,7 +69,7 @@ const Register = () => {
                 required
               />
               {nameError && <p className="text-xs text-error">{nameError}</p>}
-              
+
               <label className="label">Photo URL</label>
               <input
                 type="text"
@@ -75,7 +79,7 @@ const Register = () => {
                 onChange={(e) => setPhoto(e.target.value)}
                 required
               />
-              
+
               <label className="label">Email</label>
               <input
                 type="email"
@@ -85,7 +89,7 @@ const Register = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              
+
               <label className="label">Password</label>
               <input
                 type="password"
@@ -95,7 +99,7 @@ const Register = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              
+
               <button className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition mt-4">
                 Register
               </button>
