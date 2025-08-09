@@ -77,7 +77,7 @@ const FoodDetails = () => {
       <div className="flex flex-col md:flex-row gap-6">
         <img src={food.image} alt={food.name} className="w-60 h-60 object-cover rounded-lg" />
         <div>
-          <h2 className="text-2xl font-bold text-green-500">{food.name}</h2>
+          <h2 className="text-2xl text-black">{food.name}</h2>
           <p><span className="font-semibold text-gray-500">Category:</span> <span className="text-green-400">{food.category}</span></p>
           <p><span className="font-semibold text-gray-500">Quantity:</span> <span className="text-green-400">{food.quantity}</span></p>
           <p><span className="font-semibold text-gray-500">Expiry Date:</span> <span className="text-green-400">{new Date(food.expiryDate).toDateString()}</span></p>

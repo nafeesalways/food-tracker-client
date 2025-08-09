@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center p-10 bg-black">
+    <footer className="footer footer-horizontal footer-center p-10 bg-green-700">
       <aside>
         <a href="/">
           {" "}
