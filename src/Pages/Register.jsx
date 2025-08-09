@@ -5,17 +5,15 @@ import { toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, setUser, updateUser } = use(AuthContext);
+  const [name, setName] = useState("Test User");
+  const [photo, setPhoto] = useState("https://cdn-icons-png.flaticon.com/128/3135/3135715.png");
+  const [email, setEmail] = useState("testuser@example.com");
+  const [password, setPassword] = useState("123456#Tu");
   const [nameError, setNameError] = useState("");
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
-
-    const form = e.target;
-    const name = form.name.value;
-    const photo = form.photo.value;
-    const email = form.email.value;
-    const password = form.password.value;
 
     // Name validation
     if (name.length < 6) {
@@ -34,8 +32,6 @@ const Register = () => {
       return;
     }
 
-    console.log({ name, photo, email, password });
-
     createUser(email, password)
       .then((result) => {
         const user = result.user;
@@ -48,16 +44,7 @@ const Register = () => {
         );
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-
-        toast.error(`Error (${errorCode}): ${errorMessage}`);
-      })
-      .catch((error, user) => {
-        setUser(user);
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        toast.error(`Error (${errorCode}): ${errorMessage}`);
+        toast.error(`Error (${error.code}): ${error.message}`);
       });
   };
 
@@ -73,41 +60,49 @@ const Register = () => {
                 type="text"
                 name="name"
                 className="input"
-                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 required
               />
               {nameError && <p className="text-xs text-error">{nameError}</p>}
+              
               <label className="label">Photo URL</label>
               <input
                 type="text"
                 name="photo"
                 className="input"
-                placeholder="Enter Photo URL"
+                value={photo}
+                onChange={(e) => setPhoto(e.target.value)}
                 required
               />
+              
               <label className="label">Email</label>
               <input
                 type="email"
                 name="email"
                 className="input"
-                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
+              
               <label className="label">Password</label>
               <input
                 type="password"
                 name="password"
                 className="input"
-                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <button className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition  mt-4">
+              
+              <button className="btn bg-green-600 text-white rounded-xl hover:bg-green-700 transition mt-4">
                 Register
               </button>
-              <p className=" font-semibold text-center text-gray-300">
+              <p className="font-semibold text-center text-gray-300">
                 Already have an account? Please{" "}
                 <Link
-                  className="underline  font-extrabold text-green-600"
+                  className="underline font-extrabold text-green-600"
                   to="/signin"
                 >
                   Sign In
