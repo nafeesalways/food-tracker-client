@@ -47,6 +47,7 @@ const SignIn = () => {
               <input
                 type="email"
                 name="email"
+                 defaultValue="testuser@example.com"
                 className="input"
                 placeholder="Email"
               />
@@ -54,6 +55,7 @@ const SignIn = () => {
               <input
                 type="password"
                 name="password"
+                defaultValue="123456#Tu"
                 className="input"
                 placeholder="Password"
               />
