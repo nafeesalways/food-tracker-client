@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
- <footer className="footer footer-horizontal footer-center p-10 bg-gradient-to-r from-green-700 to-green-800 text-white">
+ <footer className="footer my-10 footer-horizontal footer-center p-10 bg-gradient-to-r from-green-700 to-green-800 text-white">
   <aside className="max-w-md">
     <a href="/" className="flex justify-center items-center mb-4">
       <img
