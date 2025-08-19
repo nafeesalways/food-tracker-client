@@ -138,7 +138,7 @@ const Navbar = () => {
         <input
           type="checkbox"
           value="dark"
-          className="lg:toggle lg:theme-controller mr-4 sm:mr-6 hidden"
+          className="lg:toggle lg:toggle-success mr-4 sm:mr-6 hidden"
           checked={theme === "dark"}
           onChange={handleThemeChange}
           aria-label="Toggle dark mode"

@@ -6,6 +6,7 @@ import Framer from './Framer';
 import ExpiryItems from './ExpiryItems';
 import Expired from './Expired';
 import ExpiryStats from './ExpiryStats';
+import NewsLetterBox from './NewsLetterBox';
 
 const Home = () => {
     const itemsPromise = fetch('https://food-tracker-server.vercel.app/items').then(res=>res.json())
@@ -35,7 +36,9 @@ const Home = () => {
             <section>
               <ExpiryStats></ExpiryStats>
             </section>
-
+               <section>
+                <NewsLetterBox></NewsLetterBox>
+               </section>
         </div>
     );
 };
