@@ -1,72 +1,84 @@
 import React from "react";
-import { FaEnvelope, FaFacebook, FaMapMarkerAlt, FaPhoneAlt, FaYoutube } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
- <footer className="footer my-10 footer-horizontal footer-center p-10 bg-gradient-to-r from-green-700 to-green-800 text-white">
-  <aside className="max-w-md">
-    <a href="/" className="flex justify-center items-center mb-4">
-      <img
-        className="h-20 w-20 rounded-full border-4 border-white shadow-lg"
-        src="https://cdn-icons-png.flaticon.com/128/17845/17845758.png"
-        alt="FreshKeep Logo"
-      />
-    </a>
-    <h2 className="font-bold text-3xl mb-2">FreshKeep Industries Ltd.</h2>
-    <p className="opacity-90 mb-4">Providing reliable goods since 1992</p>
-    <p className="text-sm opacity-70">
-      Copyright © {new Date().getFullYear()} - All rights reserved
-    </p>
-  </aside>
+    <footer className="bg-gradient-to-r from-green-700 to-green-800 text-white py-12">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
 
-  {/* Contact Info Section */}
-  <div className="text-left space-y-2">
-    <h3 className="text-xl font-semibold underline decoration-green-300">Contact Us</h3>
-    <p className="flex items-center gap-2">
-      <FaPhoneAlt className="text-green-300" /> +1 (555) 123-4567
-    </p>
-    <p className="flex items-center gap-2">
-      <FaEnvelope className="text-green-300" /> support@freshkeep.com
-    </p>
-    <p className="flex items-center gap-2">
-      <FaMapMarkerAlt className="text-green-300" /> 123 Fresh Street, GreenCity, Bangladesh
-    </p>
-  </div>
+        {/* Logo & Company Info */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <a href="/" className="flex justify-center md:justify-start items-center mb-4">
+            <img
+              className="h-20 w-20 rounded-full border-4 border-white shadow-lg"
+              src="https://cdn-icons-png.flaticon.com/128/17845/17845758.png"
+              alt="FreshKeep Logo"
+            />
+          </a>
+          <h2 className="font-bold text-3xl mb-2">FreshKeep Industries Ltd.</h2>
+          <p className="opacity-90 mb-2">Providing reliable goods since 1992</p>
+          <p className="text-sm opacity-70">
+            &copy; {new Date().getFullYear()} FreshKeep. All rights reserved.
+          </p>
+        </div>
 
-  {/* Social Links */}
-  <nav>
-    <h3 className="text-xl font-semibold underline decoration-green-300 mb-2">
-      Follow Us
-    </h3>
-    <div className="grid grid-flow-col gap-4">
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn bg-white text-green-600 text-xl rounded-full shadow hover:scale-110 transition-transform"
-        href="https://www.facebook.com/FreshKeep"
-      >
-        <FaFacebook />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn bg-white text-green-600 text-xl rounded-full shadow hover:scale-110 transition-transform"
-        href="https://twitter.com/FreshKeep"
-      >
-        <FaXTwitter />
-      </a>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        className="btn bg-white text-green-600 text-xl rounded-full shadow hover:scale-110 transition-transform"
-        href="https://www.youtube.com/@FreshKeep"
-      >
-        <FaYoutube />
-      </a>
-    </div>
-  </nav>
-</footer>
+        {/* Contact Info */}
+        <div className="bg-green-900/50 p-6 rounded-xl flex flex-col gap-3">
+          <h3 className="text-xl font-semibold mb-4 border-b border-green-300 pb-1">
+            Contact Us
+          </h3>
+          <p className="flex items-center gap-2 hover:text-green-300 transition">
+            <FaPhoneAlt /> +1 (555) 123-4567
+          </p>
+          <p className="flex items-center gap-2 hover:text-green-300 transition">
+            <FaEnvelope /> support@freshkeep.com
+          </p>
+          <p className="flex items-center gap-2 hover:text-green-300 transition">
+            <FaMapMarkerAlt /> 123 Fresh Street, GreenCity, Bangladesh
+          </p>
+        </div>
+
+        {/* Social Media */}
+        <div className="bg-green-900/50 p-6 rounded-xl flex flex-col gap-4 items-center md:items-start">
+          <h3 className="text-xl font-semibold mb-4 border-b border-green-300 pb-1">
+            Follow Us
+          </h3>
+          <div className="flex gap-4">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-white text-green-600 text-xl rounded-full shadow-lg p-3 hover:scale-110 transition-transform"
+              href="https://www.facebook.com/FreshKeepDemo"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-white text-green-600 text-xl rounded-full shadow-lg p-3 hover:scale-110 transition-transform"
+              href="https://twitter.com/FreshKeepDemo"
+            >
+              <FaXTwitter />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn bg-white text-green-600 text-xl rounded-full shadow-lg p-3 hover:scale-110 transition-transform"
+              href="https://www.youtube.com/@FreshKeepDemo"
+            >
+              <FaYoutube />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
