@@ -7,6 +7,7 @@ import ExpiryItems from "./ExpiryItems";
 import Expired from "./Expired";
 import ExpiryStats from "./ExpiryStats";
 import NewsLetterBox from "./NewsLetterBox";
+import HowItWorks from "./HowItWorks";
 
 const Home = () => {
   const itemsPromise = fetch(
@@ -28,6 +29,9 @@ const Home = () => {
           <Expired expiredItemsPromise={expiredItemsPromise}></Expired>
         </section>
       </Suspense>
+      <section>
+        <HowItWorks></HowItWorks>
+      </section>
       <section>
         <Framer></Framer>
       </section>

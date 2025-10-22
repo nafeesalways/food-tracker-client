@@ -73,14 +73,14 @@ const FoodDetails = () => {
   if (!food) return <Loader></Loader>;
 
   return (
-    <div className="max-w-4xl mx-auto p-6 mt-6 bg-white rounded-xl shadow-md">
+    <div className="max-w-4xl mb-7 mx-auto p-6 mt-6 bg-white rounded-xl shadow-md">
       <div className="flex flex-col md:flex-row gap-6">
         <img src={food.image} alt={food.name} className="w-60 h-60 object-cover rounded-lg" />
         <div>
           <h2 className="text-2xl text-black">{food.name}</h2>
-          <p><span className="font-semibold text-gray-500">Category:</span> <span className="text-green-400">{food.category}</span></p>
-          <p><span className="font-semibold text-gray-500">Quantity:</span> <span className="text-green-400">{food.quantity}</span></p>
-          <p><span className="font-semibold text-gray-500">Expiry Date:</span> <span className="text-green-400">{new Date(food.expiryDate).toDateString()}</span></p>
+          <p><span className="font-semibold text-gray-500">Category:</span> <span className="text-success font-semibold">{food.category}</span></p>
+          <p><span className="font-semibold text-gray-500">Quantity:</span> <span className="text-success font-semibold">{food.quantity}</span></p>
+          <p><span className="font-semibold text-gray-500">Expiry Date:</span> <span className="text-success font-semibold">{new Date(food.expiryDate).toDateString()}</span></p>
           <p className="mt-2 text-gray-600">{food.description}</p>
           <div className="mt-2">
             <Countdown expiryDate={food.expiryDate} />
@@ -109,7 +109,7 @@ const FoodDetails = () => {
               className="textarea textarea-bordered w-full"
               placeholder="Only the food owner can add a note"
             ></textarea>
-            <p className="text-sm text-red-500 mt-1">You are not allowed to add a note for this item.</p>
+            <p className="text-sm text-red-500 font-semibold mt-1">You are not allowed to add a note for this item.</p>
           </div>
         )}
       </div>
