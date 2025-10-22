@@ -44,11 +44,11 @@ const AddFood = () => {
       });
   };
   return (
-    <section className="max-w-3xl mx-auto p-6 bg-white rounded-xl shadow mt-10">
+    <section className="max-w-3xl mb-7 mx-auto p-6 bg-white rounded-xl shadow mt-10">
       <Helmet>
         <title>FreshKeep | AddFood</title>
       </Helmet>
-      <h2 className="text-2xl font-bold text-green-500 mb-4">Add New Food Item</h2>
+      <h2 className="text-2xl font-semibold text-success mb-4">Add New Food Item</h2>
       <form onSubmit={handleAddFood} className="space-y-4">
         <input
           type="text"

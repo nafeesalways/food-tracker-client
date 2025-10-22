@@ -58,7 +58,7 @@ const MyItems = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto mt-10 p-6 bg-white rounded-xl shadow">
+    <div className="max-w-6xl mb-7 mx-auto mt-10 p-6 bg-white rounded-xl shadow">
       <Helmet>
         <title>FreshKeep | MyItems</title>
       </Helmet>

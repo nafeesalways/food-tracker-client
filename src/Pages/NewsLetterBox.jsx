@@ -38,7 +38,7 @@ const NewsLetterBox = () => {
       a: "Yes, you can schedule meal and snack reminders, along with expiry alerts for stored foods.",
     },
     {
-      q: "Can a user add a note about food",
+      q: "Can a user add a note about food?",
       a: "Yes, Logged in user can add note and give feedback.",
     },
   ];
@@ -51,10 +51,10 @@ const NewsLetterBox = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 drop-shadow-sm">
+        <h2 className="text-4xl md:text-5xl font-semibold text-gray-500 drop-shadow-sm">
           <span className="text-green-600">Get Answers</span> & Stay Nourished
         </h2>
-        <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+        <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">
           Explore how to eat smarter, waste less, and track your food with ease.
           Learn more and stay connected with FoodTrack.
         </p>
@@ -77,7 +77,7 @@ const NewsLetterBox = () => {
             {faqs.map((item, index) => (
               <div
                 key={index}
-                className="collapse collapse-plus bg-green-50 border border-green-100 rounded-xl"
+                className="collapse collapse-plus bg-green-50 border border-success/25 rounded-xl"
               >
                 <input type="checkbox" />
                 <div className="collapse-title text-lg font-semibold text-green-700">
