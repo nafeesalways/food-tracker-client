@@ -3,7 +3,7 @@ import React from 'react';
 const StorageTips = () => {
     return (
        <section>
-        <h2 className="text-3xl font-bold text-center mb-10 mt-10">Smart Storage Tips to Prevent Waste</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 mt-10 text-green-500">Smart Storage Tips to Prevent Waste</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 
           <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition">

@@ -8,6 +8,7 @@ import Expired from "./Expired";
 import ExpiryStats from "./ExpiryStats";
 import NewsLetterBox from "./NewsLetterBox";
 import HowItWorks from "./HowItWorks";
+import FoodGallery from "./FoodGallery";
 
 const Home = () => {
   const itemsPromise = fetch(
@@ -37,6 +38,9 @@ const Home = () => {
       </section>
       <section className="mt-6">
         <Reviews></Reviews>
+      </section>
+      <section>
+        <FoodGallery></FoodGallery>
       </section>
       <section>
         <StorageTips></StorageTips>
