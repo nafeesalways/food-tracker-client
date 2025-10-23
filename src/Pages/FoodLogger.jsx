@@ -52,7 +52,7 @@ const FoodLogger = () => {
 
   const handleSave = () => {
     if (!transcript.trim()) {
-      alert("⚠️ No voice input detected!");
+      toast.error("⚠️ No voice input detected!");
       return;
     }
     toast.success(` Saved voice log: "${transcript}"`);
