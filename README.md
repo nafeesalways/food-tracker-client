@@ -9,8 +9,9 @@ A modern, interactive web application that helps users track their food inventor
 ## 🎯 Purpose
 
 The **Food Expiry Tracker System (FreshKeep)** is built to:
-- Help users track expiration dates of stored food items.
-- Manage and categorize their food inventory efficiently.
+
+- Track expiration dates of stored food items.
+- Manage and categorize food inventory efficiently.
 - Receive notifications before items expire.
 - Encourage eco-friendly habits by reducing food waste.
 - Store private notes and insights for personal food management.
@@ -18,7 +19,8 @@ The **Food Expiry Tracker System (FreshKeep)** is built to:
 ---
 
 ## ✨ Key Features
-![Food Expiry Screenshot](https://i.ibb.co.com/prbLVwyC/healthy-diet-male-hands-holding-smartphone-keeping-track-calories-his-food-with-fitness-app.jpg)  
+
+![Food Expiry Screenshot](https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600)
 
 | Feature | Description |
 |----------|--------------|
@@ -59,13 +61,13 @@ The **Food Expiry Tracker System (FreshKeep)** is built to:
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page (Hero + Food Gallery)
-![Food Gallery](https://i.ibb.co.com/Kz6yRvdN/front-view-cooked-mushrooms-with-dough-pasta-dark-table-meal-dish-food-dinner-color.jpg)
+![Food Gallery]
 
 ### 📊 Expiry Statistics
-![Expiry Graph]https://plus.unsplash.com/premium_photo-1726736525038-66c5306e08b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZvb2QlMjBjaGFydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600)
+![Expiry Graph](https://plus.unsplash.com/premium_photo-1726736525038-66c5306e08b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZvb2QlMjBjaGFydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600)
 
 ### 💌 FAQ & Newsletter Section
-![Newsletter](https://i.ibb.co.com/QvVyHFP2/club-sandwich-with-cheese-cucumber-tomato-smoked-meat-salami-served-with-french-fries.jpg)
+![Newsletter]
 
 ---
 
