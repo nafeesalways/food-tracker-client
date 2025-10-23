@@ -1,61 +1,85 @@
 # 🥦 Food Expiry Tracker System
 
-A modern web application that helps users track their food inventory and receive reminders before food items expire — minimizing waste and managing groceries efficiently.
+A modern, interactive web application that helps users track their food inventory, receive expiry reminders, and reduce food waste — designed for convenience, sustainability, and smart living.
 
-## 🚀 Live Demo
+🔗 **Live Demo:** [Visit FreshKeep](https://freshkeep-test1.netlify.app)
 
-🔗 [Visit Live Site](https://freshkeep1.netlify.app/)
-
----    
+---
 
 ## 🎯 Purpose
 
-The **Food Expiry Tracker** is designed to:
-- Help users track expiration dates of food items.
-- Manage and categorize food inventory by type (e.g., Dairy, Meat, Vegetables).
-- Store private food logs with personalized notes.
-- Encourage better food management habits to reduce waste.
+The **Food Expiry Tracker System (FreshKeep)** is built to:
+- Help users track expiration dates of stored food items.
+- Manage and categorize their food inventory efficiently.
+- Receive notifications before items expire.
+- Encourage eco-friendly habits by reducing food waste.
+- Store private notes and insights for personal food management.
 
 ---
 
 ## ✨ Key Features
-![Food Expiry Screenshot](https://img.freepik.com/free-photo/woman-buying-fruits-online-using-her-smartphone_23-2149240374.jpg?ga=GA1.1.1744511623.1749385980&semt=ais_items_boosted&w=740)    
+![Food Expiry Screenshot](https://i.ibb.co.com/prbLVwyC/healthy-diet-male-hands-holding-smartphone-keeping-track-calories-his-food-with-fitness-app.jpg)  
 
-- 🔐 **Authentication** — Secure login/logout with Firebase Auth.
-- 📦 **Add & View Items** — Add food with quantity, category, expiry date, and notes.    
-- ⏰ **Expiry Countdown** — Track time remaining until expiry.
-- 📝 **Notes System** — Add custom notes to each food item.
-- 🔍 **Filtering** — Search/filter items by category or expiry status.
-- 📱 **Responsive Design** — Mobile-friendly UI with Tailwind CSS + DaisyUI.
-- 🔄 **Framer Motion** — Smooth animations for interactive feedback.
-- 🔔 **React Toastify** — Success & error notifications for actions.
-- 📆 **React CountUp** — Animated countdown display for expiring foods.
-- 🌐 **Dynamic SEO** — Page titles with `react-helmet-async`.
-- 🔁 **React Router v6** — Seamless navigation across protected/private routes.
-
----
-
-## 🧰 Technologies & Libraries
-
-| Package               | Purpose                                                |
-|-----------------------|--------------------------------------------------------|
-| **React**             | JavaScript UI library for building the SPA            |
-| **Tailwind CSS**      | Utility-first CSS framework for styling               |
-| **DaisyUI**           | UI component library built on Tailwind                |
-| **React Router DOM**  | SPA routing system                                     |
-| **React Toastify**    | Toast notifications for user feedback                 |
-| **Framer Motion**     | Animations and transitions                            |
-| **React Helmet Async**| Manage document head (SEO support)                   |
-| **React CountUp**     | Countdown display for food expiry                     |
-| **Axios**             | Promise-based HTTP client for API requests            |
-| **Firebase Auth**     | User authentication and token management              |
+| Feature | Description |
+|----------|--------------|
+| 🔐 **Authentication** | Secure login and logout using **Firebase Auth**. |
+| 📦 **Add & View Items** | Add foods with category, quantity, expiry date, and personal notes. |
+| ⏰ **Expiry Countdown** | Automatically calculate remaining days before expiry. |
+| 📝 **Notes System** | Add and view private notes for each food item. |
+| 🔍 **Filter & Search** | Quickly find foods by category or expiry status. |
+| 📊 **Expiry Data Visualization (NEW)** | Visualize expiring items using **Recharts** for clear insights. |
+| 🖼️ **Our Food Gallery (NEW)** | Beautiful **carousel slider** showcasing food categories like dairy, fruits, and vegetables. |
+| ❓ **FAQ + Newsletter (NEW)** | Learn about the system and subscribe for updates directly on the site. |
+| 📱 **Responsive Design** | Fully responsive with **Tailwind CSS + DaisyUI** for all devices. |
+| 💫 **Smooth Animations** | Built with **Framer Motion** for elegant transitions. |
+| 🔔 **Smart Notifications** | Real-time alerts using **React Toastify**. |
+| 🧠 **Speech Recognition (Experimental)** | Try logging food items using your **voice** (browser-based). |
 
 ---
 
-## 📦 Installation & Setup
+## 🧩 Technologies & Libraries
+
+| Technology / Library | Purpose |
+|----------------------|----------|
+| **React.js (Vite)** | Core frontend framework |
+| **Tailwind CSS** | Utility-first styling |
+| **DaisyUI** | Ready-made Tailwind components |
+| **Framer Motion** | Animation and transitions |
+| **Recharts** | Visual data representation (Expiry stats) |
+| **React Toastify** | Interactive toast notifications |
+| **React Router DOM (v6)** | Client-side routing |
+| **React Helmet Async** | SEO optimization |
+| **React CountUp** | Animated expiry countdowns |
+| **Axios** | API request handling |
+| **Firebase Auth** | Authentication system |
+| **Speech Recognition API** | Browser-based voice logging (no backend needed) |
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page (Hero + Food Gallery)
+![Food Gallery](https://i.ibb.co.com/Kz6yRvdN/front-view-cooked-mushrooms-with-dough-pasta-dark-table-meal-dish-food-dinner-color.jpg)
+
+### 📊 Expiry Statistics
+![Expiry Graph]https://plus.unsplash.com/premium_photo-1726736525038-66c5306e08b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZvb2QlMjBjaGFydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600)
+
+### 💌 FAQ & Newsletter Section
+![Newsletter](https://i.ibb.co.com/QvVyHFP2/club-sandwich-with-cheese-cucumber-tomato-smoked-meat-salami-served-with-french-fries.jpg)
+
+---
+
+## ⚙️ Installation & Setup
 
 ```bash
+# Clone the repository
 git clone https://github.com/your-username/food-expiry-tracker.git
-cd food-expiry-tracker
+
+# Navigate into the project
+cd food-tracker-client
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
