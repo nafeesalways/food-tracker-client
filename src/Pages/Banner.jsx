@@ -26,7 +26,7 @@ const Banner = () => {
   ];
 
   return (
-    <section className="w-full overflow-hidden">
+  <section className="w-full overflow-hidden">
       <Carousel
         showThumbs={false}
         autoPlay
@@ -62,7 +62,10 @@ const Banner = () => {
               <p className="mt-4 text-lg md:text-xl mb-7 text-gray-100 font-medium drop-shadow-md">
                 {slide.desc}
               </p>
-              <Link to={'/features'} className="mt-10 px-8 py-3 bg-white/20 hover:bg-success text-white font-semibold rounded-full backdrop-blur-md transition">
+              <Link
+                to={'/features'}
+                className="mt-10 px-8 py-3 bg-white/20 hover:bg-success text-white font-semibold rounded-full backdrop-blur-md transition"
+              >
                 Learn More
               </Link>
             </div>
