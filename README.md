@@ -1,87 +1,115 @@
-# 🥦 Food Expiry Tracker System
+<div align="center">
+
+# 🥦 FreshKeep - Food Expiry Tracker System
+
+### *Track Smart. Waste Less. Live Better.*
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_FreshKeep-success?style=for-the-badge)](https://freshkeep-test1.netlify.app)
+[![Made with React](https://img.shields.io/badge/Made_with-React_⚛️-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Styled with Tailwind](https://img.shields.io/badge/Styled_with-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
 A modern, interactive web application that helps users track their food inventory, receive expiry reminders, and reduce food waste — designed for convenience, sustainability, and smart living.
 
-🔗 **Live Demo:** [Visit FreshKeep](https://freshkeep-test1.netlify.app)
+[Features](#-key-features) • [Demo](#-screenshots) • [Tech Stack](#-tech-stack) • [Installation](#-quick-start) • [Usage](#-usage)
+
+---
+
+![FreshKeep Banner](https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?auto=format&fit=crop&q=80&w=1200)
+
+</div>
 
 ---
 
 ## 🎯 Purpose
 
-The **Food Expiry Tracker System (FreshKeep)** is built to:
+**FreshKeep** empowers users to:
 
-- Track expiration dates of stored food items.
-- Manage and categorize food inventory efficiently.
-- Receive notifications before items expire.
-- Encourage eco-friendly habits by reducing food waste.
-- Store private notes and insights for personal food management.
+- 📅 **Track expiration dates** of stored food items with precision
+- 📦 **Manage and categorize** food inventory efficiently
+- 🔔 **Receive timely notifications** before items expire
+- 🌱 **Reduce food waste** and promote sustainable living
+- 📝 **Store private notes** and insights for personal food management
 
 ---
 
 ## ✨ Key Features
 
-![Food Expiry Screenshot](https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600)
+<table>
+<tr>
+<td width="50%">
 
-| Feature | Description |
-|----------|--------------|
-| 🔐 **Authentication** | Secure login and logout using **Firebase Auth**. |
-| 📦 **Add & View Items** | Add foods with category, quantity, expiry date, and personal notes. |
-| ⏰ **Expiry Countdown** | Automatically calculate remaining days before expiry. |
-| 📝 **Notes System** | Add and view private notes for each food item. |
-| 🔍 **Filter & Search** | Quickly find foods by category or expiry status. |
-| 📊 **Expiry Data Visualization (NEW)** | Visualize expiring items using **Recharts** for clear insights. |
-| 🖼️ **Our Food Gallery (NEW)** | Beautiful **carousel slider** showcasing food categories like dairy, fruits, and vegetables. |
-| ❓ **FAQ + Newsletter (NEW)** | Learn about the system and subscribe for updates directly on the site. |
-| 📱 **Responsive Design** | Fully responsive with **Tailwind CSS + DaisyUI** for all devices. |
-| 💫 **Smooth Animations** | Built with **Framer Motion** for elegant transitions. |
-| 🔔 **Smart Notifications** | Real-time alerts using **React Toastify**. |
-| 🧠 **Speech Recognition (Experimental)** | Try logging food items using your **voice** (browser-based). |
+### 🔐 Core Features
+- **Secure Authentication** via Firebase Auth
+- **Smart Food Management** with categories and quantities
+- **Expiry Countdown Timer** with real-time tracking
+- **Private Notes System** for each food item
+- **Advanced Filter & Search** by category/status
 
----
+</td>
+<td width="50%">
 
-## 🧩 Technologies & Libraries
+### 🎨 Enhanced UX
+- **Data Visualization** with Recharts
+- **Beautiful Food Gallery** carousel slider
+- **FAQ & Newsletter** subscription system
+- **Fully Responsive Design** for all devices
+- **Smooth Animations** powered by Framer Motion
 
-| Technology / Library | Purpose |
-|----------------------|----------|
-| **React.js (Vite)** | Core frontend framework |
-| **Tailwind CSS** | Utility-first styling |
-| **DaisyUI** | Ready-made Tailwind components |
-| **Framer Motion** | Animation and transitions |
-| **Recharts** | Visual data representation (Expiry stats) |
-| **React Toastify** | Interactive toast notifications |
-| **React Router DOM (v6)** | Client-side routing |
-| **React Helmet Async** | SEO optimization |
-| **React CountUp** | Animated expiry countdowns |
-| **Axios** | API request handling |
-| **Firebase Auth** | Authentication system |
-| **Speech Recognition API** | Browser-based voice logging (no backend needed) |
+</td>
+</tr>
+</table>
+
+### 🚀 Experimental Features
+- **🎤 Voice Input** - Log food items using speech recognition (browser-based)
+- **🔔 Smart Notifications** - Real-time alerts via React Toastify
 
 ---
 
-## 🖼️ Screenshots
+## 🛠️ Tech Stack
 
-### 🏠 Home Page (Hero + Food Gallery)
-![Food Gallery]
+<div align="center">
 
-### 📊 Expiry Statistics
-![Expiry Graph](https://plus.unsplash.com/premium_photo-1726736525038-66c5306e08b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGZvb2QlMjBjaGFydHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600)
+| Category | Technologies |
+|:--------:|:------------|
+| **Frontend** | React.js (Vite), JavaScript (ES6+) |
+| **Styling** | Tailwind CSS, DaisyUI |
+| **Animation** | Framer Motion |
+| **Routing** | React Router DOM v6 |
+| **Charts** | Recharts |
+| **Authentication** | Firebase Auth |
+| **HTTP Client** | Axios |
+| **Notifications** | React Toastify |
+| **SEO** | React Helmet Async |
+| **Utilities** | React CountUp, Speech Recognition API |
 
-### 💌 FAQ & Newsletter Section
-![Newsletter]
+</div>
 
 ---
 
-## ⚙️ Installation & Setup
+## 📸 Screenshots
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/food-expiry-tracker.git
+<div align="center">
 
-# Navigate into the project
-cd food-tracker-client
+### 🏠 Home Page & Food Gallery
+![Food Gallery](https://images.unsplash.com/photo-1543168256-418811576931?auto=format&fit=crop&q=80&w=800)
 
-# Install dependencies
-npm install
+### 📊 Expiry Statistics Dashboard
+![Expiry Graph](https://plus.unsplash.com/premium_photo-1726736525038-66c5306e08b0?auto=format&fit=crop&q=80&w=800)
 
-# Start the development server
-npm run dev
+### 📱 Responsive Mobile View
+![Mobile View](https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=400)
+
+</div>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- Firebase account (for authentication)
+
+### Installation
+

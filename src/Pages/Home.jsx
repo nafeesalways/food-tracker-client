@@ -1,5 +1,4 @@
 import React, { Suspense } from "react";
-import Banner from "./Banner";
 import Reviews from "./Reviews";
 import StorageTips from "./StorageTips";
 import Framer from "./Framer";
@@ -20,7 +19,6 @@ const Home = () => {
   ).then((res) => res.json());
   return (
     <div>
-      <Banner></Banner>
       <Suspense>
         <section className="mt-10">
           <ExpiryItems itemsPromise={itemsPromise}></ExpiryItems>

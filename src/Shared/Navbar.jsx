@@ -151,8 +151,8 @@ const Navbar = () => {
             src="https://cdn-icons-png.flaticon.com/128/17845/17845758.png"
             alt="FreshKeep Logo"
           />
-          <span className="text-md lg:text-2xl  font-bold text-green-600">
-            FreshKeep
+          <span className="text-md lg:text-2xl text-green-500 font-bold">
+            Fresh<span className="text-primary text-md lg:text-2xl font-bold">Keep</span>
           </span>
         </Link>
       </div>
