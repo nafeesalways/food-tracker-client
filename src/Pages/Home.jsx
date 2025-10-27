@@ -9,6 +9,7 @@ import NewsLetterBox from "./NewsLetterBox";
 import HowItWorks from "./HowItWorks";
 import FoodGallery from "./FoodGallery";
 import FoodLogger from "./FoodLogger";
+import Banner from "./Banner";
 
 const Home = () => {
   const itemsPromise = fetch(
@@ -19,6 +20,9 @@ const Home = () => {
   ).then((res) => res.json());
   return (
     <div>
+      <section>
+        <Banner></Banner>
+      </section>
       <Suspense>
         <section className="mt-10">
           <ExpiryItems itemsPromise={itemsPromise}></ExpiryItems>
