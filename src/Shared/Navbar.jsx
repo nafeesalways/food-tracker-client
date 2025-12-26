@@ -94,6 +94,20 @@ const Navbar = () => {
               Add Food
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                `font-semibold text-base lg:text-lg transition-all duration-200 ${
+                  isActive
+                    ? "text-green-600 border-b-2 border-green-600"
+                    : "hover:text-green-600"
+                }`
+              }
+              to="/recipes"
+            >
+            Recipe Suggestions
+            </NavLink>
+          </li>
 
           <li>
             <NavLink
